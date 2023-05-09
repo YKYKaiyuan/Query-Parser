@@ -1,0 +1,20 @@
+{
+  "title": "Invalid Where EQ - Invalid Filter Key Type",
+  "input": {
+    "WHERE":{
+      "EQ": {
+        "sections_dept": 40
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "sections_dept",
+        "sections_id",
+        "sections_avg"
+      ],
+      "ORDER": "sections_avg"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

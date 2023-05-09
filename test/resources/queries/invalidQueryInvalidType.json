@@ -1,0 +1,6 @@
+{
+  "title": "Invalid Query - Invalid Type",
+  "input": [],
+  "errorExpected": true,
+  "expected": "InsightError"
+}

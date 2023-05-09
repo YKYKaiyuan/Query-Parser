@@ -1,0 +1,14 @@
+{
+  "title": "Invalid Where - Invalid Type",
+  "input": {
+    "WHERE":[],
+    "OPTIONS":{
+      "COLUMNS":[
+        "sections_dept"
+      ],
+      "ORDER":"sections_dept"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

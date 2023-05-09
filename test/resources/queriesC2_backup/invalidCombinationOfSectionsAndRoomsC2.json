@@ -1,0 +1,20 @@
+{
+	"title": "invalidCombinationOfSectionsAndRoomsC2",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_title",
+				"rooms_fullname"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"sections_title"
+				]
+			}
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

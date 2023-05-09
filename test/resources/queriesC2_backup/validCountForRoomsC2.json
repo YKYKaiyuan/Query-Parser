@@ -1,0 +1,209 @@
+{
+	"title": "validCountForRoomsC2",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_fullname",
+				"RoomCount"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"RoomCount"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_fullname"
+			],
+			"APPLY": [
+				{
+					"RoomCount": {
+						"COUNT": "rooms_seats"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"rooms_fullname": "Aquatic Ecosystems Research Laboratory",
+			"RoomCount": 1
+		},
+		{
+			"rooms_fullname": "Centre for Interactive  Research on Sustainability",
+			"RoomCount": 1
+		},
+		{
+			"rooms_fullname": "Earth and Ocean Sciences - Main",
+			"RoomCount": 1
+		},
+		{
+			"rooms_fullname": "Friedman Building",
+			"RoomCount": 1
+		},
+		{
+			"rooms_fullname": "Mathematics Annex",
+			"RoomCount": 1
+		},
+		{
+			"rooms_fullname": "Student Recreation Centre",
+			"RoomCount": 1
+		},
+		{
+			"rooms_fullname": "Auditorium Annex",
+			"RoomCount": 2
+		},
+		{
+			"rooms_fullname": "Brock Hall Annex",
+			"RoomCount": 2
+		},
+		{
+			"rooms_fullname": "Hebb",
+			"RoomCount": 2
+		},
+		{
+			"rooms_fullname": "Iona Building",
+			"RoomCount": 2
+		},
+		{
+			"rooms_fullname": "Life Sciences Centre",
+			"RoomCount": 2
+		},
+		{
+			"rooms_fullname": "Ponderosa Commons: Oak House",
+			"RoomCount": 2
+		},
+		{
+			"rooms_fullname": "War Memorial Gymnasium",
+			"RoomCount": 2
+		},
+		{
+			"rooms_fullname": "Wesbrook",
+			"RoomCount": 2
+		},
+		{
+			"rooms_fullname": "Biological Sciences",
+			"RoomCount": 3
+		},
+		{
+			"rooms_fullname": "Chemical and Biological Engineering Building",
+			"RoomCount": 3
+		},
+		{
+			"rooms_fullname": "Earth Sciences Building",
+			"RoomCount": 3
+		},
+		{
+			"rooms_fullname": "Frank Forward",
+			"RoomCount": 3
+		},
+		{
+			"rooms_fullname": "Robert F. Osborne Centre",
+			"RoomCount": 3
+		},
+		{
+			"rooms_fullname": "The Leon and Thea Koerner University Centre",
+			"RoomCount": 3
+		},
+		{
+			"rooms_fullname": "Allard Hall (LAW)",
+			"RoomCount": 4
+		},
+		{
+			"rooms_fullname": "Anthropology and Sociology",
+			"RoomCount": 4
+		},
+		{
+			"rooms_fullname": "Chemistry",
+			"RoomCount": 4
+		},
+		{
+			"rooms_fullname": "Hugh Dempster Pavilion",
+			"RoomCount": 4
+		},
+		{
+			"rooms_fullname": "Leonard S. Klinck (also known as CSCI)",
+			"RoomCount": 4
+		},
+		{
+			"rooms_fullname": "Frederic Lasserre",
+			"RoomCount": 5
+		},
+		{
+			"rooms_fullname": "Hennings",
+			"RoomCount": 5
+		},
+		{
+			"rooms_fullname": "Jack Bell Building for the School of Social Work",
+			"RoomCount": 5
+		},
+		{
+			"rooms_fullname": "MacLeod",
+			"RoomCount": 5
+		},
+		{
+			"rooms_fullname": "Mathematics",
+			"RoomCount": 5
+		},
+		{
+			"rooms_fullname": "Orchard Commons",
+			"RoomCount": 5
+		},
+		{
+			"rooms_fullname": "Pharmaceutical Sciences Building",
+			"RoomCount": 5
+		},
+		{
+			"rooms_fullname": "West Mall Swing Space",
+			"RoomCount": 5
+		},
+		{
+			"rooms_fullname": "Civil and Mechanical Engineering",
+			"RoomCount": 6
+		},
+		{
+			"rooms_fullname": "Food, Nutrition and Health",
+			"RoomCount": 6
+		},
+		{
+			"rooms_fullname": "School of Population and Public Health",
+			"RoomCount": 6
+		},
+		{
+			"rooms_fullname": "Forest Sciences Centre",
+			"RoomCount": 7
+		},
+		{
+			"rooms_fullname": "Geography",
+			"RoomCount": 7
+		},
+		{
+			"rooms_fullname": "Neville Scarfe",
+			"RoomCount": 7
+		},
+		{
+			"rooms_fullname": "MacMillan",
+			"RoomCount": 8
+		},
+		{
+			"rooms_fullname": "Irving K Barber Learning Centre",
+			"RoomCount": 10
+		},
+		{
+			"rooms_fullname": "Woodward (Instructional Resources Centre-IRC)",
+			"RoomCount": 10
+		},
+		{
+			"rooms_fullname": "Henry Angus",
+			"RoomCount": 15
+		},
+		{
+			"rooms_fullname": "Buchanan",
+			"RoomCount": 19
+		}
+	]
+}

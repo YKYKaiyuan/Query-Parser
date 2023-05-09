@@ -1,0 +1,19 @@
+{
+  "title": "Invalid Query - Excess Keys",
+  "input": {
+    "WHERE":{
+      "GT": {
+        "sections_avg":97
+      }
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "sections_dept"
+      ],
+      "ORDER":"sections_dept"
+    },
+    "RANDOM":{}
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

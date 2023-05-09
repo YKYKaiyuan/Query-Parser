@@ -1,0 +1,21 @@
+{
+  "title": "Invalid Where LT - Too Many Filter Keys",
+  "input": {
+    "WHERE":{
+      "LT": {
+        "sections_avg":40,
+        "sections_fail": 20
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "sections_dept",
+        "sections_id",
+        "sections_avg"
+      ],
+      "ORDER": "sections_avg"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}
